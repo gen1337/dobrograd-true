@@ -333,8 +333,7 @@ p.UpdatePlayerList = function(self)
 	end)
 
 	for i, ply in ipairs(plys) do
-		if hook.Run('dbg-score.hidePlayer', ply) == true then continue end
-
+		--if hook.Run('dbg-score.hidePlayer', ply) == true then continue end
 		local b = vgui.Create 'DButton'
 		b:SetParent(self.canvas)
 		b:Dock(TOP)
